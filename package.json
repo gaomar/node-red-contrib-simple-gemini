@@ -1,0 +1,44 @@
+{
+  "name": "node-red-contrib-simple-gemini",
+  "version": "1.0.0",
+  "description": "Gemini Pro APIを使ってプロンプトからテキストを生成してくれます。",
+  "main": "node.js",
+  "node-red": {
+    "version": ">=2.0.0",
+    "nodes": {
+      "simple-gemini": "node.js"
+    }
+  },
+  "files": [
+    "node.js",
+    "node.html",
+    "examples/"
+  ],
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gaomar/node-red-contrib-simple-gemini"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bugs": {
+    "url": "https://github.com/gaomar/node-red-contrib-simple-gemini/issues"
+  },
+  "keywords": [
+    "gemini",
+    "gemini pro",
+    "google",
+    "node-red"
+  ],
+  "directories": {
+    "example": "examples"
+  },
+  "author": "gaomar",
+  "license": "MIT",
+  "dependencies": {
+    "@google/generative-ai": "^0.1.1"
+  }
+}

@@ -1,0 +1,61 @@
+[
+  {
+      "id": "8ed965ab63e4a256",
+      "type": "simple-gemini",
+      "z": "e0e3e454efb53b1d",
+      "name": "",
+      "Token": "",
+      "x": 400,
+      "y": 200,
+      "wires": [
+          [
+              "79a556c530eab8f0"
+          ]
+      ]
+  },
+  {
+      "id": "14b0eff8bc96f16b",
+      "type": "inject",
+      "z": "e0e3e454efb53b1d",
+      "name": "こんにちは。あなたは誰？",
+      "props": [
+          {
+              "p": "payload"
+          },
+          {
+              "p": "topic",
+              "vt": "str"
+          }
+      ],
+      "repeat": "",
+      "crontab": "",
+      "once": false,
+      "onceDelay": 0.1,
+      "topic": "",
+      "payload": "こんにちは。あなたは誰？",
+      "payloadType": "str",
+      "x": 170,
+      "y": 200,
+      "wires": [
+          [
+              "8ed965ab63e4a256"
+          ]
+      ]
+  },
+  {
+      "id": "79a556c530eab8f0",
+      "type": "debug",
+      "z": "e0e3e454efb53b1d",
+      "name": "debug 6",
+      "active": true,
+      "tosidebar": true,
+      "console": false,
+      "tostatus": false,
+      "complete": "false",
+      "statusVal": "",
+      "statusType": "auto",
+      "x": 580,
+      "y": 200,
+      "wires": []
+  }
+]

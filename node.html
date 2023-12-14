@@ -1,0 +1,50 @@
+<script type="text/javascript">
+    RED.nodes.registerType('simple-gemini',{
+        category: 'Gemini',
+        color: '#A6BBCF',
+        defaults: {
+            name: {value: ""},
+            Token:{value: "", required:true},
+        },
+        inputs:1,
+        outputs:1,
+        icon: "arrow-in.png",
+        label: function() {
+            return this.name||"simple-gemini";
+        }
+    });
+ </script>
+ 
+ <script type="text/html" data-template-name="simple-gemini">
+    <div class="form-row">
+        <label for="node-input-name"><i class="icon-tag"></i> Name</label>
+        <input type="text" id="node-input-name" placeholder="Name">
+    </div>
+    <div class="form-row">
+        <label for="node-input-Token">
+            <i class="icon-tag"></i>
+            API Key
+        </label>
+        <input type="password" id="node-input-Token" placeholder="API Key">
+    </div>
+</script>
+ 
+<script type="text/html" data-help-name="simple-gemini">
+    <p>入力したプロンプトからテキストを生成します。</p>
+    <h3>入力</h3>
+    <dl class="message-properties">
+        <dt>payload
+            <span class="property-type">string</span>
+        </dt>
+        <dd> テキスト生成したいプロンプトを入力してください。</dd>
+        <dt class="optional">API Key <span class="property-type">string</span></dt>
+        <dd> GeminiのAPIキーを設定してください。</dd>
+    </dl>
+    <h3>出力</h3>
+    <dl class="message-properties">
+        <dt>payload
+            <span class="property-type">string</span>
+        </dt>
+        <dd> プロンプト内容に従って生成されたテキストを返します。 </dd>
+    </dl>
+ </script>
